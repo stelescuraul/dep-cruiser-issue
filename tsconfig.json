@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "declaration": false,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "checkJs": false,
+    "paths": {
+      "@foo/math": ["libs/math/index.js"],
+      "@foo/math/*": ["libs/math/*"],
+      "@foo/common/*": ["libs/common/*"]
+    },
+  },
+  "include": ["**/*.ts", "**/*.js"],
+  "exclude": ["node_modules", "dist"]
+}
